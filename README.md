@@ -110,7 +110,7 @@ The app will open at `http://localhost:8501`.
 
 ## Dataset
 
-Indian domestic flights dataset with columns: `Airline, Date_of_Journey, Source, Destination, Route, Dep_Time, Duration, Total_Stops, Price`.
+Indian domestic flights dataset (`data/flights_cleaned.csv`) with columns: `Airline, Date_of_Journey, Source, Destination, Route, Dep_Time, Duration, Total_Stops, Price`.
 
 ## Notes
 
