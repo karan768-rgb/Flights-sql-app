@@ -5,20 +5,15 @@ A Streamlit dashboard for exploring Indian domestic flight data — search fligh
 ## Screenshots
 
 **Home**
-![Home page](<img width="1918" height="1012" alt="Screenshot 2026-06-29 224611" src="https://github.com/user-attachments/assets/fd092219-caa4-4c86-90f0-ae29e4c2bba3" />
-)
+![Home page](https://github.com/user-attachments/assets/fd092219-caa4-4c86-90f0-ae29e4c2bba3)
 
 **Check Flights**
-![Check flights page](<img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/7fc9013c-fad6-4133-aa38-527229592326" />
-)
+![Check flights page](https://github.com/user-attachments/assets/7fc9013c-fad6-4133-aa38-527229592326)
 
 **Analytics**
-![Analytics charts continued](<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/d514f4ea-31e3-425d-9565-c9143f7d1b5f" />
-)
-![Analytics overview](<img width="1917" height="1012" alt="image" src="https://github.com/user-attachments/assets/9a6f8ea2-192e-4873-bd1d-bc9c83c4617e" />
-)
-![Analytics charts](<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/d6386de5-fa91-4229-b963-6af487a672ac" />
-)
+![Analytics overview](https://github.com/user-attachments/assets/9a6f8ea2-192e-4873-bd1d-bc9c83c4617e)
+![Analytics charts](https://github.com/user-attachments/assets/d514f4ea-31e3-425d-9565-c9143f7d1b5f)
+![Analytics charts continued](https://github.com/user-attachments/assets/d6386de5-fa91-4229-b963-6af487a672ac)
 
 
 > Live demo isn't available since the app connects to a local MySQL instance. Run it locally using the steps below.
