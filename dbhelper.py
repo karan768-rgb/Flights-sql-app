@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+print("DEBUG:", os.getenv("DB_HOST"), os.getenv("DB_USER"), os.getenv("DB_NAME"))
 
 
 
@@ -19,8 +20,8 @@ class DB:
             )
             self.mycursor = self.conn.cursor()
             print("connection established")
-        except:
-            print("connection error")
+        except Exception as e:
+            print("connection error:", e)
 
     def fetch_city_names(self):
         city = []

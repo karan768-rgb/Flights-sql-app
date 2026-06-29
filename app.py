@@ -2,6 +2,8 @@ import streamlit as st
 from dbhelper import DB
 import plotly.graph_objects as go
 import plotly.express as px
+import pandas as pd
+
 
 st.set_page_config(layout="wide")
 db = DB()
@@ -23,11 +25,15 @@ if user_option == 'Check Flights':
         destination = st.selectbox('Destination', sorted(city))
 
     if st.button('Search'):
-        results = db.fetch_all_flights(source, destination)
-        if results:
-            st.dataframe(results)
+        if source == destination:
+            st.warning("Source and destination can't be the same.")
         else:
-            st.warning(f"No flights found from {source} to {destination}. Try a different route.")
+            results = db.fetch_all_flights(source, destination)
+            if results:
+                df = pd.DataFrame(results, columns=["Airline", "Route", "Departure Time", "Duration (min)", "Price"])
+                st.dataframe(df, use_container_width=True)
+            else:
+                st.warning(f"No flights found from {source} to {destination}. Try a different route.")
 
 elif user_option == 'Analytics':
 
